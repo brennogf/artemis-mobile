@@ -1,50 +1,46 @@
-# Welcome to your Expo app 👋
+# Artemis Mobile
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This repository contains "Artemis Mobile", a lightweight Expo/React Native app that lets you list and control profiles on an Artemis RGB server using its REST API.
 
-## Get started
+## For End Users
 
-1. Install dependencies
+Artemis Mobile provides a simple UI to view Artemis profiles and toggle a profile's "suspend" state remotely.
 
-   ```bash
-   npm install
-   ```
+- APK: I will publish a ready-to-install APK in this repository's Releases section on GitHub. You can download the latest APK from the Releases page.
 
-2. Start the app
+Quick steps to use the APK:
 
-   ```bash
-   npx expo start
-   ```
+1. Download the latest APK from the repository Releases.
+2. On your Android device, enable installation from unknown sources (or use the package installer in modern Android versions).
+3. Install the APK and open the app.
+4. In Settings, enter your Artemis server IP (and port if different from the default 9696).
+5. On the Home screen you can view available profiles and toggle their suspend state.
 
-In the output, you'll find options to open the app in a
+Notes:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- The app communicates directly with your Artemis server over HTTP. Make sure your mobile device is on the same network as the Artemis server.
+- If the app cannot access the Artemis server, add an exception in your computer's firewall/antivirus.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## For Developers
 
-## Get a fresh project
+Prerequisites
 
-When you're ready, run:
+- Node.js v22.20+
+- npm
+- Expo: you can use via npx (`npx expo`) or install the CLI globally
+
+Install dependencies:
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Run the app in development:
 
-## Learn more
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Made with ♥ by Brenno Givigier :wave: [Get in touch!](https://www.linkedin.com/in/brenno-givigier/)
